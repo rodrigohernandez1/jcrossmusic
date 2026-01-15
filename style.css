@@ -284,3 +284,16 @@ body #top-nav a:hover {
 #about h2 {
   padding: 0px 0px 30px 0;
 }
+
+/* ====== ABOUT IMAGE GRID ====== */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
