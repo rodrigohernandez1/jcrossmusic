@@ -321,6 +321,7 @@ body #top-nav a:hover {
 
 /* Content */
 .hero .content {
+  margin-top:24px;
   padding: 2rem;
 }
 
