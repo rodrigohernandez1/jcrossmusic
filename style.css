@@ -306,6 +306,8 @@ body #top-nav a:hover {
 
 /* ======== HERO =========*/
 /* Hero Section */
+
+/* Hero */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -318,12 +320,12 @@ body #top-nav a:hover {
 }
 
 /* Content */
-.content {
+.hero .content {
   padding: 2rem;
 }
 
 /* Title */
-h1 {
+.hero h1 {
   font-size: clamp(2.8rem, 6vw, 4.5rem);
   font-weight: 500;
   letter-spacing: 0.12em;
@@ -331,8 +333,8 @@ h1 {
 }
 
 /* Subtle descriptor */
-.tagline {
-  margin-top: 0.75rem;
+.hero .tagline {
+  margin-top: 1.2rem;
   font-size: 0.85rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -340,15 +342,15 @@ h1 {
 }
 
 /* Divider */
-.separator {
-  width: 48px;
+.hero .separator {
+  width: 128px;
   height: 1px;
   background: #777;
   margin: 2.5rem auto;
 }
 
 /* Coming soon */
-.coming {
+.hero .coming {
   font-size: 0.9rem;
   letter-spacing: 0.35em;
   text-transform: uppercase;
@@ -356,7 +358,7 @@ h1 {
 }
 
 /* Date */
-.date {
+.hero .date {
   margin-top: 0.75rem;
   font-size: 0.9rem;
   letter-spacing: 0.15em;
