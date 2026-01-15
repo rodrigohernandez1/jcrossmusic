@@ -288,12 +288,18 @@ body #top-nav a:hover {
 /* ====== ABOUT IMAGE GRID ====== */
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
+  margin-bottom: 24px;
 }
 
-.image-grid img {
+.image-grid-item {
+  aspect-ratio: 4 / 3;   /* or 1 / 1 for square */
+  overflow: hidden;
+}
+
+.image-grid-item img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
