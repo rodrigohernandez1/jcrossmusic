@@ -12,7 +12,7 @@ export default async function handler(req, res) {
 
   try {
     await resend.emails.send({
-      from: 'Contact Form <onboarding@resend.dev>',
+      from: 'Contact Form <emails@jcrossofficial.com>',
       to: process.env.MY_PERSONAL_EMAIL, // Your hidden email
       subject: `WEBSITE REQUEST FROM: ${fname} ${lname}`,
       html: `<p><strong>From:</strong> ${email}</p><p><strong>Name:</strong> ${fname} ${lname}</p><p>${message}</p>`,
