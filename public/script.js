@@ -30,6 +30,7 @@ if (contactForm) {
   const submitBtn = document.getElementById('submit-btn');
 
   contactForm.addEventListener('submit', async (e) => {
+    console.log("Form submit intercepted!"); 
     if (!contactForm.checkValidity()) return;
     e.preventDefault();
 
