@@ -1,0 +1,24 @@
+{
+  "name": "jcross_simple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigohernandez1/jcrossmusic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rodrigohernandez1/jcrossmusic/issues"
+  },
+  "homepage": "https://github.com/rodrigohernandez1/jcrossmusic#readme",
+  "dependencies": {
+    "resend": "^6.9.1"
+  }
+}
