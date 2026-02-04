@@ -14,8 +14,8 @@ export default async function handler(req, res) {
     await resend.emails.send({
       from: 'Contact Form <onboarding@resend.dev>',
       to: process.env.MY_PERSONAL_EMAIL, // Your hidden email
-      subject: `New Message from ${fname} ${lname}`,
-      html: `<p><strong>From:</strong> ${email}</p><p>${message}</p>`,
+      subject: `WEBSITE REQUEST FROM: ${fname} ${lname}`,
+      html: `<p><strong>From:</strong> ${email}</p><p><strong>Name:</strong> ${fname} ${lname}</p><p>${message}</p>`,
     });
 
     return res.status(200).json({ success: true });
