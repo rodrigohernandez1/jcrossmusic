@@ -1,24 +1,25 @@
 const modal = document.getElementById('modal');
-const modalImg = document.getElementById('modal-img');
-const modalTitle = document.getElementById('modal-title');
-const modalDesc = document.getElementById('modal-desc');
-const modalLink = document.getElementById('modal-link');
-const closeBtn = document.querySelector('.close');
+if (modal) {
+  const modalImg = document.getElementById('modal-img');
+  const modalTitle = document.getElementById('modal-title');
+  const modalDesc = document.getElementById('modal-desc');
+  const modalLink = document.getElementById('modal-link');
+  const closeBtn = document.querySelector('.close');
 
-document.querySelectorAll('.project img').forEach(img => {
-  img.addEventListener('click', () => {
-    const project = img.closest('.project');
-    modalImg.src = project.dataset.image;
-    modalTitle.textContent = project.dataset.title;
-    modalDesc.textContent = project.dataset.description;
-    modalLink.href = project.dataset.spotify;
-    modal.style.display = 'block';
+  document.querySelectorAll('.project img').forEach(img => {
+    img.addEventListener('click', () => {
+      const project = img.closest('.project');
+      modalImg.src = project.dataset.image;
+      modalTitle.textContent = project.dataset.title;
+      modalDesc.textContent = project.dataset.description;
+      modalLink.href = project.dataset.spotify;
+      modal.style.display = 'block';
+    });
   });
-});
 
-closeBtn.onclick = () => modal.style.display = 'none';
-window.onclick = e => { if (e.target === modal) modal.style.display = 'none'; };
-
+  closeBtn.onclick = () => modal.style.display = 'none';
+  window.onclick = e => { if (e.target === modal) modal.style.display = 'none'; };
+}
 
 // Contact //
 // Contact Form specific logic
@@ -30,9 +31,10 @@ if (contactForm) {
   const submitBtn = document.getElementById('submit-btn');
 
   contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
     console.log("Form submit intercepted!"); 
     if (!contactForm.checkValidity()) return;
-    e.preventDefault();
 
     submitBtn.innerText = "Sending...";
     submitBtn.disabled = true;
