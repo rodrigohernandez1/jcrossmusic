@@ -378,8 +378,6 @@ body #top-nav a:hover {
 #contact-title{
   text-align: center;
   line-height: 15px;
-  padding-left:17px;
-  padding-right:17px;
   padding-bottom: 17px;
   display: block;
   text-size-adjust: 100%;
@@ -395,8 +393,6 @@ body #top-nav a:hover {
 }
 
 #contact-form {
-  padding-left:17px;
-  padding-right:17px;
   padding-bottom: 17px;
 }
 
@@ -485,13 +481,38 @@ label {
   height: auto; 
   box-sizing: border-box;
   position: relative; 
-  min-height: 100px; 
+  min-height: 110px; 
   overflow-wrap: break-word;
   font-family: Arial; 
   overflow: auto; 
   resize: vertical; 
   text-align: start; 
   vertical-align: top;
+}
+
+
+.button-wraper {
+  line-height:15px;
+  text-align:left;
+  text-size-adjust: 100%;
+}
+
+button {
+  appearance: none;
+  background-color: rgb(39, 39, 39);
+  border-width:0px; 
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-family: Poppins; 
+  font-size: 15px; 
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding-block: 15px; 
+  padding-inline: 37.5px;
+  text-transform: uppercase;
+  transition: .1s opacity linear;
+  vertical-align: baseline;
+  width: auto; 
 }
 
 
